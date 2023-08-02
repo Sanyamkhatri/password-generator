@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+    <p class="title">Password Generator</p>
+    <div class="passwordInput">
+        <span class="passInput"></span>
+        <img src="images/copy1.png" alt="copy" class="overlap">
+    </div>
+</div>
+    <div class="passwordSpecs">
+        <div class="length">
+            <p class="chlength common-bg_color">Character Length</p>
+            <p class="len common-bg_color">0</p>
+        </div>
+        <input type="range" class="character_range" min="0" max="10" value="0">
+        <div class="checklist">
+            <div class="spec1">
+                <input type="checkbox" class="common-bg_color chk-box1" value="uppercase">
+                <p class="common-bg_color spec-Description">Include Uppercase Letters</p>
+            </div>
+            <div class="spec1">
+                <input type="checkbox" class="common-bg_color chk-box2" value="lowercase">
+                <p class="common-bg_color spec-Description">Include Lowercase Letters</p>
+            </div>
+            <div class="spec1">
+                <input type="checkbox" class="common-bg_color chk-box3" value="numbers">
+                <p class="common-bg_color spec-Description">Include numbers</p>
+            </div>
+            <div class="spec1">
+                <input type="checkbox" class="common-bg_color chk-box4" value="specialcharacters">
+                <p class="common-bg_color spec-Description">Include symbols</p>
+            </div>
+        </div>
+        <div class="strength">
+            <p class="strength_desc">STRENGTH</p>
+            <div class="indicator">
+                <img class="fill" src="images/Rectangle.png" alt="indicator" id="r1">
+                <img class="fill" src="images/Rectangle.png" alt="indicator" id="r2">
+                <img class="fill" src="images/Rectangle.png" alt="indicator" id="r3">
+                <img class="fill" src="images/Rectangle.png" alt="indicator" id="r4">
+            </div>
+        </div>
+        <div class="btn-generate">
+            <button class="generate-btn">GENERATE <img src="images/arrow.svg" alt="GENERATE" class="generate"></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
